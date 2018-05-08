@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  	<head>
+  		<h1>Neural Network</h1>
+  		<script src="processing.js"></script>
+  		<link rel="stylesheet" type="text/css" href="style.css">
+  	</head>
+	<body>
+ 		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="muscHydro.html">Muscular Hydrostats</a></li>
+		  <li><a href="octos.html">Octopuses</a></li>
+		  <li><a href="model.html">Arm Model</a></li>
+		  <li><a class="active" href="nn.html">Neural Network</a></li>
+		  <li><a href="arm.html">Interactive Arm</a></li>
+		  <li><a href="references.html">References</a></li>
+		</ul>
+		<div class="wrapper">
+		  <div class="box video">
+		  	<video width="625" controls>
+			  <source src="octoShow.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		  </div>
+		  <div class="box text4">
+		  	<p>
+			  	This is a video of the neural network I created in action. It is a 3-layer neural network, taking the (x,y) coordinate of the target as input, and outputting the delay and activation times for each muscle spring in the arm. This allows it to create all motor commands at once instead of fine-tuning as the arm moves closer to the point. While this is not a true model of how limbs are controlled, it simplifies the control algorithm, while still allowing different movements over time.
+			</p>
+		  </div>
+		  <div class="box text5">
+		  	<p>
+				For training data I created activations for the arm and then recorded where the tip of the arm ended up in the coordinate space. Initially I created random delays and activations to move the arm, but this created too noisy a dataset to train the neural network on. I then randomly generated one or two bend points in the arm, and then created delays and activations to bend the arm at those points to create a more ordered dataset to train the neural network on. 
+			</p>
+		  </div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  	<head>
+  		<h1>Arm Model</h1>
+  		<script src="processing.js"></script>
+  		<link rel="stylesheet" type="text/css" href="style.css">
+  	</head>
+	<body>
+ 		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="muscHydro.html">Muscular Hydrostats</a></li>
+		  <li><a href="octos.html">Octopuses</a></li>
+		  <li><a class="active" href="model.html">Arm Model</a></li>
+		  <li><a href="nn.html">Neural Network</a></li>
+		  <li><a href="arm.html">Interactive Arm</a></li>
+		  <li><a href="references.html">References</a></li>
+		</ul>
+		<div class="wrapper">
+		  <div class="box img1">
+		  	<img src="Images/YModel.jpg" alt="Mountain View">
+		  </div>
+		  <div class="box text1">
+		  	<p>
+			  	To integrate understanding of their structure and control, octopus arms have studied by using computer models. Yekutieli et al. focused their model on the stereotypical bend propagation motion <sup>2</sup>. They created a 2D model of an arm that approximated a muscular hydrostat by having twenty segments. Each segment maintained a constant volume, which is an important characteristic of an octopus arm and hydrostatic skeletal systems<sup>2</sup>. The model was able to visually match the bend propagation motion of an octopus arm. Kang et al. decided to build a similar model, but in three dimensions<sup>3</sup>. Like Yekutieli et al., they approximated the octopus arm with multiple segments of point masses connected by actuators. Kang et al. increased the complexity of the model by adding the interaction of suckers with surfaces.because they were more focused on how the octopus arm manipulates objects than how it moves<sup>3</sup>.
+			</p>
+		  </div>
+		  <div class="box img4">
+		  	<img src="Images/myArm.jpg" alt="Mountain View">
+		  </div>
+		  <div class="box text6">
+		  	<p>
+				My model has twenty segments that make up the arm. Each segment of the arm has two muscles springs which are used to move the arm. There are also two support springs per segment that act as cross braces so that the arm maintains its shape to some degree. These springs are connected to point masses that get closer together as the arm comes to a tip. The proximal part of the arm is anchored as if attached to a larger body. The springs are also dampened so that the arm can come to rest at some point instead of moving forever, simulating drag in the water and imperfect springs.
+			</p>
+		  </div>
+		</div>
+	</body>
+</html>
