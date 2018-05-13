@@ -52,6 +52,10 @@ img{
     width: 100%;
 }
 
+video{
+    width: 100%;
+}
+
 .wrapper {
     display: grid;
     grid-gap: 10px;
